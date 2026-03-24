@@ -6,15 +6,44 @@
   --lime-400: #d9ef78;
   --neutral-0: #ffffff;
   --neutral-1000: #000000;
+  --max-w-maxScreen: 1920px;
 }
 
 @theme inline {
-  --font-sans: var(--font-work-sans);
-  --font-mono: var(--font-syne);
+  --color-green-100: var(--green-100);
+  --color-green-900: var(--green-900);
+  --color-lime-400: var(--lime-400);
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-1000: var(--neutral-1000);
+  --max-width-maxScreen: var(--max-w-maxScreen);
+  --font-work-sans: var(--font-work-sans), sans-serif;
+  --font-syne: var(--font-syne), sans-serif;
 }
 
 body {
-  background: var(--neutral-0);
-  color: var(--neutral-1000);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  @apply bg-neutral-0 text-neutral-1000 font-work-sans text-xl;
+}
+
+.container {
+  @apply w-full max-w-maxScreen min-h-full mx-auto my-0 px-32;
+}
+
+.container-sm {
+  @apply w-full max-w-maxScreen min-h-full mx-auto my-0 px-16;
+}
+
+a {
+  @apply hover:opacity-80 transition-opacity;
+}
+
+.nav-link {
+  @apply text-green-900 font-medium;
+}
+
+button {
+  @apply cursor-pointer transition-colors;
+}
+
+.primary-btn {
+  @apply bg-green-900 hover:bg-green-900/90 text-neutral-0 font-medium px-10 py-4 rounded-full;
 }

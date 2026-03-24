@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Syne } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/app/ui/header/header";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -27,7 +28,10 @@ export default function RootLayout({
       lang="en"
       className={`${workSans.variable} ${syne.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+        <Header />
+        <main className={"container"}>{children}</main>
+      </body>
     </html>
   );
 }
