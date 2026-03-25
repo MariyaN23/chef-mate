@@ -1,3 +1,9 @@
+import { Banner } from "@/app/ui/home/banner";
+
 export default function Home() {
-  return <div>test</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }

@@ -21,15 +21,19 @@
 }
 
 body {
-  @apply bg-neutral-0 text-neutral-1000 font-work-sans text-xl;
+  @apply bg-neutral-0 text-green-900 font-work-sans text-xl;
 }
 
 .container {
-  @apply w-full max-w-maxScreen min-h-full mx-auto my-0 px-32;
+  @apply w-full max-w-maxScreen mx-auto my-0 px-32;
 }
 
 .container-sm {
-  @apply w-full max-w-maxScreen min-h-full mx-auto my-0 px-16;
+  @apply w-full max-w-maxScreen mx-auto my-0 px-16;
+}
+
+section .container {
+    @apply py-24;
 }
 
 a {
@@ -41,9 +45,21 @@ a {
 }
 
 button {
-  @apply cursor-pointer transition-colors;
+  @apply font-medium cursor-pointer transition-colors px-10 py-4 rounded-full;
 }
 
 .primary-btn {
-  @apply bg-green-900 hover:bg-green-900/90 text-neutral-0 font-medium px-10 py-4 rounded-full;
+  @apply bg-green-900 hover:bg-green-900/90 text-neutral-0;
+}
+
+.secondary-btn {
+    @apply bg-lime-400 hover:bg-lime-400/70 text-green-900;
+}
+
+.outline-btn {
+    @apply bg-green-100 hover:bg-green-900/10 border-2 text-green-900 border-green-900;
+}
+
+h1 {
+    @apply text-green-900 font-syne font-medium text-6xl;
 }
