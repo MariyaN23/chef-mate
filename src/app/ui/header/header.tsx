@@ -5,15 +5,16 @@ import { ROUTES } from "@/app/constants/routes";
 export const Header = () => {
   return (
     <header className={"bg-green-100"}>
-      <div className={"container pt-16"}>
+      <div className={"container pt-4 2xl:pt-16"}>
         <nav className={"flex items-center justify-between"}>
           <Link
             href={ROUTES.HOME}
             className={"text-green-900"}
+            aria-label={"Home page"}
           >
             <Logo />
           </Link>
-          <ul className={"flex gap-20"}>
+          <ul className={"hidden 2xl:flex gap-20"}>
             <li>
               <Link
                 href={ROUTES.HOME}
@@ -46,7 +47,7 @@ export const Header = () => {
             >
               Log in
             </Link>
-            <button className={"primary-btn"}>Start for free</button>
+            <button className={"hidden 2xl:block primary-btn"}>Start for free</button>
           </div>
         </nav>
       </div>

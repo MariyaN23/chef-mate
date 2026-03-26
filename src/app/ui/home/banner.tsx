@@ -11,7 +11,7 @@ import { Bread } from "@/app/ui/icons/bread";
 export const Banner = () => {
   return (
     <section className={"bg-green-100"}>
-      <div className={"container space-y-20"}>
+      <div className={"container space-y-10 2xl:space-y-20"}>
         <div className={"flex flex-col gap-10 items-center justify-center text-center"}>
           <h1 className={"max-w-4xl text-balance"}>
             Elevate Your Mealtime with AI-Powered Personalization
@@ -22,32 +22,34 @@ export const Banner = () => {
           <button className={"outline-btn w-fit"}>Try Our Demo</button>
           <button className={"secondary-btn w-fit"}>Start For Free</button>
         </div>
-        <div className={"flex justify-between"}>
-          <div className={"h-fit bg-neutral-0 rounded-4xl p-4 -mt-80 relative"}>
-            <div className={"absolute right-0 -top-32 p-3 rounded-full bg-lime-400"}>
+        <div className={"flex flex-col items-center 2xl:flex-row gap-8 2xl:gap-4 justify-between"}>
+          <div className={"w-fit h-fit bg-neutral-0 rounded-4xl p-4 2xl:-mt-80 relative"}>
+            <div
+              className={"hidden 2xl:block absolute right-0 -top-32 p-3 rounded-full bg-lime-400"}
+            >
               <Ingredients />
             </div>
             <div className={"text-6xl font-syne"}>95%</div>
             <div className={"mb-6"}>Improved Eating Habits</div>
             <Image
               src={Img1}
-              className={"rounded-2xl w-[260px] h-[300px] object-cover"}
+              className={"rounded-2xl w-[260px] object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
             />
           </div>
-          <div className={"relative -mt-64"}>
+          <div className={"hidden 2xl:block relative -mt-64"}>
             <div
               className={
-                "absolute left-4 -top-28 p-2 rounded-full border-[1.5px] border-neutral-1000"
+                "hidden 2xl:block absolute left-4 -top-28 p-2 rounded-full border-[1.5px] border-neutral-1000"
               }
             >
               <Carrot />
             </div>
             <Image
               src={Img2}
-              className={"rounded-4xl w-[275px] h-[461px] object-cover"}
+              className={"rounded-4xl w-[275px] object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
@@ -61,13 +63,17 @@ export const Banner = () => {
             <div className={"font-syne font-medium text-6xl"}>30 000+</div>
             <div className={"text-2xl"}>Happy Users</div>
           </div>
-          <div className={"h-fit bg-neutral-0 rounded-4xl p-4 -mt-60 relative"}>
-            <div className={"absolute right-12 -top-20 p-1.5 rounded-full bg-green-900"}>
+          <div className={"w-fit h-fit bg-neutral-0 rounded-4xl p-4 2xl:-mt-60 relative"}>
+            <div
+              className={
+                "hidden 2xl:block absolute right-12 -top-20 p-1.5 rounded-full bg-green-900"
+              }
+            >
               <Bread />
             </div>
             <Image
               src={Img3}
-              className={"rounded-2xl w-[260px] h-[300px] object-cover"}
+              className={"rounded-2xl w-[260px] object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
@@ -75,13 +81,17 @@ export const Banner = () => {
             <div className={"text-6xl font-syne mt-6"}>25%</div>
             <div>Saved on Groceries</div>
           </div>
-          <div className={"relative -mt-80"}>
-            <div className={"absolute -left-12 -top-32 p-3.5 rounded-full bg-neutral-0"}>
+          <div className={"hidden 2xl:block relative -mt-80"}>
+            <div
+              className={
+                "hidden 2xl:block absolute -left-12 -top-32 p-3.5 rounded-full bg-neutral-0"
+              }
+            >
               <Cherry />
             </div>
             <Image
               src={Img4}
-              className={"rounded-4xl w-[275px] h-[461px] object-cover"}
+              className={"rounded-4xl w-[275px] object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
