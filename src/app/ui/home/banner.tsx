@@ -11,7 +11,7 @@ import { Bread } from "@/app/ui/icons/bread";
 export const Banner = () => {
   return (
     <section className={"bg-green-100"}>
-      <div className={"container space-y-10 2xl:space-y-20"}>
+      <div className={"container"}>
         <div className={"flex flex-col gap-10 items-center justify-center text-center"}>
           <h1 className={"max-w-4xl text-balance"}>
             Elevate Your Mealtime with AI-Powered Personalization

@@ -1,35 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --green-100: #f1f2ed;
-  --green-900: #213d34;
-  --lime-400: #d9ef78;
-  --neutral-0: #ffffff;
-  --neutral-1000: #000000;
-  --max-w-maxScreen: 1920px;
+    --green-100: #f1f2ed;
+    --green-900: #213d34;
+    --lime-400: #d9ef78;
+    --neutral-0: #ffffff;
+    --neutral-1000: #000000;
+    --max-w-maxScreen: 1920px;
 }
 
 @theme inline {
-  --color-green-100: var(--green-100);
-  --color-green-900: var(--green-900);
-  --color-lime-400: var(--lime-400);
-  --color-neutral-0: var(--neutral-0);
-  --color-neutral-1000: var(--neutral-1000);
-  --max-width-maxScreen: var(--max-w-maxScreen);
-  --font-work-sans: var(--font-work-sans), sans-serif;
-  --font-syne: var(--font-syne), sans-serif;
+    --color-green-100: var(--green-100);
+    --color-green-900: var(--green-900);
+    --color-lime-400: var(--lime-400);
+    --color-neutral-0: var(--neutral-0);
+    --color-neutral-1000: var(--neutral-1000);
+    --max-width-maxScreen: var(--max-w-maxScreen);
+    --font-work-sans: var(--font-work-sans), sans-serif;
+    --font-syne: var(--font-syne), sans-serif;
 }
 
 body {
-  @apply bg-neutral-0 text-green-900 font-work-sans text-xl;
+    @apply bg-neutral-0 text-green-900 font-work-sans text-xl;
 }
 
 .container {
-  @apply w-full max-w-maxScreen mx-auto my-0 px-8 2xl:px-32;
-}
-
-.container-sm {
-  @apply w-full max-w-maxScreen mx-auto my-0 px-16;
+    @apply w-full max-w-maxScreen mx-auto my-0 px-8 2xl:px-32 space-y-10 2xl:space-y-20;
 }
 
 section .container {
@@ -37,29 +33,34 @@ section .container {
 }
 
 a {
-  @apply hover:opacity-80 transition-opacity;
+    @apply hover:opacity-80 transition-opacity;
 }
 
 .nav-link {
-  @apply text-green-900 font-medium;
+    @apply font-medium;
 }
 
 button {
-  @apply font-medium cursor-pointer transition-colors px-10 py-4 rounded-full;
+    @apply font-medium cursor-pointer transition-colors px-10 py-4 rounded-full;
 }
 
 .primary-btn {
-  @apply bg-green-900 hover:bg-green-900/90 text-neutral-0;
+    @apply bg-green-900 hover:bg-green-900/90 text-neutral-0;
 }
 
 .secondary-btn {
-    @apply bg-lime-400 hover:bg-lime-400/70 text-green-900;
+    @apply bg-lime-400 hover:bg-lime-400/70;
 }
 
 .outline-btn {
-    @apply bg-green-100 hover:bg-green-900/10 border-2 text-green-900 border-green-900;
+    @apply bg-green-100 hover:bg-green-900/10 border-2 border-green-900;
 }
 
-h1 {
-    @apply text-green-900 font-syne font-medium text-6xl;
+h1,
+.slogan {
+    @apply font-syne font-medium text-5xl md:text-6xl;
+}
+
+h2 {
+    @apply font-syne font-medium text-4xl md:text-5xl;
 }
