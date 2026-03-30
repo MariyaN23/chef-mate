@@ -14,13 +14,17 @@ export const Demo = () => {
           >
             <Line />
           </div>
-          <p className={"max-w-96"}>See how it works: your personalized meal planning journey</p>
+          <p className={"text-center md:text-left 2xl:max-w-96"}>
+            See how it works: your personalized meal planning journey
+          </p>
         </header>
         <div
-          className={"rounded-l-full 2xl:border-2 border-green-900 py-8 px-10 -mr-[calc(50vw-50%)]"}
+          className={
+            "rounded-l-full 2xl:border-2 border-green-900 2xl:py-8 2xl:px-10 2xl:-mr-[calc(50vw-50%)]"
+          }
         >
           <div className={"flex flex-col 2xl:flex-row items-center 2xl:items-start gap-12"}>
-            <div className={"rounded-full border-2 border-green-900 py-8 px-10"}>
+            <div className={"rounded-full border-2 border-green-900 py-2 px-2.5 2xl:py-8 2xl:px-10"}>
               <Image
                 src={Video}
                 className={"rounded-full"}
