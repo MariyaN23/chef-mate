@@ -30,14 +30,14 @@ const data = [
 export const HowItWorks = () => {
   const dataLength = data.length;
   const [currentData, setCurrentData] = useState(0);
-  const decreaseBtnDisabled = currentData === 0;
-  const increaseBtnDisabled = currentData === dataLength - 1;
-  const increaseDataHandler = () => {
+  const prevBtnDisabled = currentData === 0;
+  const nextBtnDisabled = currentData === dataLength - 1;
+  const nextDataHandler = () => {
     if (currentData < dataLength - 1) {
       setCurrentData(currentData + 1);
     }
   };
-  const decreaseDataHandler = () => {
+  const prevDataHandler = () => {
     if (currentData > 0) {
       setCurrentData(currentData - 1);
     }
@@ -64,15 +64,17 @@ export const HowItWorks = () => {
             <div className={"flex gap-5 justify-center 2xl:justify-start"}>
               <button
                 className={"outline-btn"}
-                onClick={decreaseDataHandler}
-                disabled={decreaseBtnDisabled}
+                onClick={prevDataHandler}
+                disabled={prevBtnDisabled}
+                aria-label={"Previous"}
               >
                 <ArrowLeft />
               </button>
               <button
                 className={"outline-btn"}
-                onClick={increaseDataHandler}
-                disabled={increaseBtnDisabled}
+                onClick={nextDataHandler}
+                disabled={nextBtnDisabled}
+                aria-label={"Next"}
               >
                 <ArrowRight />
               </button>

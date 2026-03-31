@@ -73,7 +73,7 @@ export const Banner = () => {
             </div>
             <Image
               src={Img3}
-              className={"rounded-2xl w-[260px] object-cover"}
+              className={"rounded-2xl w-[260px] h-[293px] object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
