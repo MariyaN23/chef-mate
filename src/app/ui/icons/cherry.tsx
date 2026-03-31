@@ -21,7 +21,7 @@ export const Cherry = () => {
           height="1"
         >
           <use
-              xlinkHref="#image0_1_182"
+            xlinkHref="#image0_1_182"
             transform="scale(0.0104167)"
           />
         </pattern>
