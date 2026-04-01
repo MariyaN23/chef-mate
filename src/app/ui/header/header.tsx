@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className={"bg-green-100"}>
       <div className={"container pt-4 2xl:pt-16"}>
-        <nav className={"flex items-center justify-between"}>
+        <div className={"flex items-center justify-between"}>
           <Link
             href={ROUTES.HOME}
             className={"text-green-900"}
@@ -14,32 +14,34 @@ export const Header = () => {
           >
             <Logo />
           </Link>
-          <ul className={"hidden 2xl:flex gap-20"}>
-            <li>
-              <Link
-                href={ROUTES.HOME}
-                className={"nav-link"}
-              >
-                Recipes
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={ROUTES.HOME}
-                className={"nav-link"}
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={ROUTES.SUPPORT}
-                className={"nav-link"}
-              >
-                Support
-              </Link>
-            </li>
-          </ul>
+          <nav aria-label="Main navigation">
+            <ul className={"hidden 2xl:flex gap-20"}>
+              <li>
+                <Link
+                  href={ROUTES.RECIPES}
+                  className={"nav-link"}
+                >
+                  Recipes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={ROUTES.BLOG}
+                  className={"nav-link"}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={ROUTES.SUPPORT}
+                  className={"nav-link"}
+                >
+                  Support
+                </Link>
+              </li>
+            </ul>
+          </nav>
           <div className={"flex items-center gap-8"}>
             <Link
               href={ROUTES.LOGIN}
@@ -47,9 +49,14 @@ export const Header = () => {
             >
               Log in
             </Link>
-            <button className={"hidden 2xl:block primary-btn"}>Start for free</button>
+            <Link
+              href={ROUTES.REGISTRATION}
+              className={"hidden 2xl:block primary-link"}
+            >
+              Start for free
+            </Link>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
   );

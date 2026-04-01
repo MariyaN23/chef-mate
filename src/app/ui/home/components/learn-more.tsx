@@ -8,8 +8,9 @@ export const LearnMore = () => {
       href={ROUTES.RECIPES}
       className={"outline-link w-fit"}
     >
-      <div className={"flex items-center gap-2"}>
-        Learn More <ArrowRight />
+      <div className={"flex flex-col sm:flex-row items-center gap-2"}>
+        <span>Learn More</span>
+        <ArrowRight />
       </div>
     </Link>
   );

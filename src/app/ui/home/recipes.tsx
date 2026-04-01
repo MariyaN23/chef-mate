@@ -85,7 +85,7 @@ export const Recipes = () => {
             </div>
             <Image
               src={Img1}
-              className={"rounded-4xl h-full object-cover"}
+              className={"rounded-4xl w-auto md:h-full object-cover"}
               alt=""
               aria-hidden="true"
               role="presentation"
