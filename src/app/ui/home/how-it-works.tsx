@@ -79,7 +79,7 @@ export const HowItWorks = () => {
                 <ArrowRight />
               </button>
             </div>
-            <span className={"accent-text absolute -bottom-32 z-10"}>
+            <span className={"accent-text absolute -bottom-16 md:-bottom-24 2xl:-bottom-32 z-10"}>
               0{currentData + 1}/0{dataLength}
             </span>
           </div>

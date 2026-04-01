@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${workSans.variable} ${syne.variable} h-full antialiased`}
     >
-      <body className={"min-h-dvh"}>
+      <body>
         <Header />
         <main>{children}</main>
         <Footer />
