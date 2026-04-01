@@ -1,4 +1,4 @@
-import { Line } from "@/app/ui/icons/line";
+import { Line } from "@/app/assets/icons/line";
 
 type Props = {
   headerTitle: string;

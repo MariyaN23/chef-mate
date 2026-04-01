@@ -3,10 +3,10 @@ import Img1 from "../../assets/images/grocery-bag-1.webp";
 import Img2 from "../../assets/images/soup-dish.webp";
 import Img3 from "../../assets/images/grocery-bag-2.webp";
 import Img4 from "../../assets/images/potted-plant.webp";
-import { Ingredients } from "@/app/ui/icons/ingredients";
-import { Carrot } from "@/app/ui/icons/carrot";
-import { Cherry } from "@/app/ui/icons/cherry";
-import { Bread } from "@/app/ui/icons/bread";
+import { Ingredients } from "@/app/assets/icons/ingredients";
+import { Carrot } from "@/app/assets/icons/carrot";
+import { Cherry } from "@/app/assets/icons/cherry";
+import { Bread } from "@/app/assets/icons/bread";
 
 export const Banner = () => {
   return (
@@ -37,6 +37,7 @@ export const Banner = () => {
               alt=""
               aria-hidden="true"
               role="presentation"
+              loading="eager"
             />
           </div>
           <div className={"hidden 2xl:block relative -mt-64"}>

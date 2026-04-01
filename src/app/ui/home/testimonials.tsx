@@ -5,7 +5,7 @@ import Img3 from "../../assets/images/Sarah-J.webp";
 import Img4 from "../../assets/images/Rebecca-S.webp";
 import Image from "next/image";
 import Video from "@/app/assets/images/demo-video.webp";
-import { Quotes } from "@/app/ui/icons/quotes";
+import { Quotes } from "@/app/assets/icons/quotes";
 
 const testimonials = [
   {

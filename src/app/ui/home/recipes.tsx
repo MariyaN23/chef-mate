@@ -5,7 +5,7 @@ import Img2 from "@/app/assets/images/avocado-toast.webp";
 import Img3 from "@/app/assets/images/tomato-salad.webp";
 import Img4 from "@/app/assets/images/beet-salad.webp";
 import Image from "next/image";
-import { ArrowRight } from "@/app/ui/icons/arrow-right";
+import { ArrowRight } from "@/app/assets/icons/arrow-right";
 import { ROUTES } from "@/app/constants/routes";
 import Link from "next/link";
 import { LearnMore } from "@/app/ui/home/components/learn-more";

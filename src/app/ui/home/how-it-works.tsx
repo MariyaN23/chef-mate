@@ -1,8 +1,8 @@
 "use client";
 
 import { HomeSectionHeader } from "@/app/ui/home/components/home-section-header";
-import { ArrowLeft } from "@/app/ui/icons/arrow-left";
-import { ArrowRight } from "@/app/ui/icons/arrow-right";
+import { ArrowLeft } from "@/app/assets/icons/arrow-left";
+import { ArrowRight } from "@/app/assets/icons/arrow-right";
 import { useState } from "react";
 import Img1 from "../../assets/images/woman-eating-healthy.webp";
 import Img2 from "../../assets/images/food-salad-fresh.webp";

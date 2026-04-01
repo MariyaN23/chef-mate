@@ -1,5 +1,5 @@
 import { ROUTES } from "@/app/constants/routes";
-import { ArrowRight } from "@/app/ui/icons/arrow-right";
+import { ArrowRight } from "@/app/assets/icons/arrow-right";
 import Link from "next/link";
 
 export const LearnMore = () => {

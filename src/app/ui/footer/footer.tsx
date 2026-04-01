@@ -1,9 +1,9 @@
 import { ROUTES } from "@/app/constants/routes";
-import { Logo } from "@/app/ui/icons/logo";
+import { Logo } from "@/app/assets/icons/logo";
 import Link from "next/link";
-import { Facebook } from "@/app/ui/icons/facebook";
-import { X } from "@/app/ui/icons/x";
-import { Tiktok } from "@/app/ui/icons/tiktok";
+import { Facebook } from "@/app/assets/icons/facebook";
+import { X } from "@/app/assets/icons/x";
+import { Tiktok } from "@/app/assets/icons/tiktok";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

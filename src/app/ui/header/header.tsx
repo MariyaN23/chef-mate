@@ -1,4 +1,4 @@
-import { Logo } from "@/app/ui/icons/logo";
+import { Logo } from "@/app/assets/icons/logo";
 import Link from "next/link";
 import { ROUTES } from "@/app/constants/routes";
 
