@@ -42,7 +42,8 @@ a {
   @apply font-medium;
 }
 
-button {
+button,
+.outline-link {
   @apply font-medium cursor-pointer transition-colors px-10 py-4 rounded-full;
 }
 
@@ -54,13 +55,22 @@ button {
   @apply bg-lime-400 hover:bg-lime-400/70;
 }
 
+.outline-link,
 .outline-btn {
-  @apply bg-green-100 hover:bg-lime-400 border-2 border-green-900 disabled:hover:bg-green-100 disabled:opacity-15 disabled:cursor-not-allowed;
+  @apply bg-green-100 hover:opacity-100 hover:bg-lime-400 border-2 border-green-900 disabled:hover:bg-green-100 disabled:opacity-15 disabled:cursor-not-allowed;
+}
+
+.outline-link {
+  @apply block px-7;
 }
 
 h1,
 .slogan {
   @apply font-syne font-medium text-4xl sm:text-5xl md:text-6xl;
+}
+
+.accent-text-sm {
+  @apply font-syne text-xl sm:text-2xl md:text-3xl;
 }
 
 .accent-text-lg {

@@ -1,0 +1,25 @@
+@media (min-width: 40rem) {
+  .recipes::after {
+    width: 2.75rem;
+    height: 2.75rem;
+    content: "";
+    position: absolute;
+    background: transparent;
+    top: 0;
+    right: -2.75rem;
+    border-top-left-radius: var(--radius-4xl);
+    box-shadow: -1rem -1rem var(--neutral-0);
+  }
+
+  .recipes::before {
+    width: 2.75rem;
+    height: 2.75rem;
+    content: "";
+    position: absolute;
+    background: transparent;
+    bottom: -2.75rem;
+    left: 0;
+    border-top-left-radius: var(--radius-4xl);
+    box-shadow: -1rem -0.5rem var(--neutral-0);
+  }
+}

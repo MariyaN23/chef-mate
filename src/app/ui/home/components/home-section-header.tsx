@@ -7,9 +7,7 @@ type Props = {
 
 export const HomeSectionHeader = ({ headerTitle, headerDescription }: Props) => {
   return (
-    <header
-      className={"flex flex-col md:flex-row items-center text-center md:text-left gap-7 px-16"}
-    >
+    <header className={"flex flex-col md:flex-row items-center text-center md:text-left gap-7"}>
       <h2>{headerTitle}</h2>
       <div
         aria-hidden="true"
