@@ -34,19 +34,16 @@ section .container {
   @apply py-8 md:py-16 2xl:py-24;
 }
 
-a {
-  @apply hover:opacity-80 transition-opacity;
-}
-
 .nav-link {
-  @apply font-medium;
+  @apply font-medium hover:opacity-80 transition-opacity;
 }
 
 .link-underline {
-  @apply underline;
+  @apply underline hover:opacity-80 transition-opacity;
 }
 
 button,
+.secondary-link,
 .outline-link,
 .primary-link {
   @apply font-medium cursor-pointer transition-colors px-10 py-4 rounded-full;
@@ -57,6 +54,7 @@ button,
   @apply bg-green-900 hover:opacity-100 hover:bg-green-900/90 text-neutral-0;
 }
 
+.secondary-link,
 .secondary-btn {
   @apply bg-lime-400 hover:bg-lime-400/70;
 }
@@ -70,6 +68,7 @@ button,
   @apply bg-green-100;
 }
 
+.secondary-link,
 .outline-link {
   @apply block px-7;
 }
