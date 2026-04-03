@@ -63,7 +63,11 @@ button,
 
 .outline-link,
 .outline-btn {
-  @apply bg-green-100 hover:opacity-100 hover:bg-lime-400 border-2 border-green-900 disabled:hover:bg-green-100 disabled:opacity-15 disabled:cursor-not-allowed;
+  @apply hover:opacity-100 hover:bg-lime-400 border-2 border-green-900 disabled:hover:bg-green-100 disabled:opacity-15 disabled:cursor-not-allowed;
+}
+
+.outline-btn {
+  @apply bg-green-100;
 }
 
 .outline-link {

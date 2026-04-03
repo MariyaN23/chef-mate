@@ -6,7 +6,7 @@ export const LearnMore = () => {
   return (
     <Link
       href={ROUTES.RECIPES}
-      className={"outline-link w-fit"}
+      className={"outline-link w-fit bg-lime-400"}
     >
       <div className={"flex flex-col sm:flex-row items-center gap-2"}>
         <span>Learn More</span>
