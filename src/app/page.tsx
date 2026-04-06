@@ -6,6 +6,7 @@ import { Recipes } from "@/app/ui/home/recipes";
 import { Testimonials } from "@/app/ui/home/testimonials";
 import { Pricing } from "@/app/ui/home/pricing";
 import { Insights } from "@/app/ui/home/insights";
+import { Assistance } from "@/app/ui/home/assistance";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Insights />
+      <Assistance />
     </>
   );
 }

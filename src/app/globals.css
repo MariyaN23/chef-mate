@@ -8,6 +8,8 @@
   --neutral-0: #ffffff;
   --neutral-1000: #000000;
   --max-w-maxScreen: 1920px;
+  /*container width in 2xl:px-32*/
+  --max-w-content: calc(var(--max-w-maxScreen) - 16rem);
 }
 
 @theme inline {
@@ -18,6 +20,7 @@
   --color-beige: var(--beige);
   --color-neutral-1000: var(--neutral-1000);
   --max-width-maxScreen: var(--max-w-maxScreen);
+  --max-width-content: var(--max-w-content);
   --font-work-sans: var(--font-work-sans), sans-serif;
   --font-syne: var(--font-syne), sans-serif;
 }

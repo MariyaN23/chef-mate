@@ -58,7 +58,7 @@ export const Pricing = () => {
       </div>
       <div
         className={
-          "mx-auto max-w-maxScreen relative flex justify-center items-center px-8 2xl:px-32 mb-16 2xl:mb-24"
+          "mx-auto max-w-content relative flex justify-center items-center px-8 2xl:px-32 mb-16 2xl:mb-24"
         }
       >
         <div
