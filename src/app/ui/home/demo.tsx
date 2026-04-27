@@ -1,10 +1,37 @@
+"use client";
 import Video from "../../assets/images/demo-video.webp";
 import Image from "next/image";
 import { HomeSectionHeader } from "@/app/ui/home/components/home-section-header";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/dist/SplitText";
+import gsap from "gsap";
 
 export const Demo = () => {
+  useGSAP(() => {
+    const titleSplit = SplitText.create("#demo .slogan", {
+      type: "words",
+    });
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#demo .slogan",
+          start: "top 100%",
+          markers: true,
+        },
+      })
+      .from(titleSplit.words, {
+        opacity: 0,
+        duration: 2,
+        ease: "expo.out",
+        stagger: 0.1,
+      });
+  });
+
   return (
-    <section className={"overflow-x-hidden"}>
+    <section
+      id="demo"
+      className={"overflow-x-hidden"}
+    >
       <div className={"container"}>
         <HomeSectionHeader
           headerTitle={"Demo"}
